@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Day 1 Feedback Form 🌟</h1>
+  <div id="form">
+    <label>Was your manager available and welcoming?</label>
+    <div class="stars" data-question="q1"></div>
+
+    <label>Were your IT assets ready?</label>
+    <div class="stars" data-question="q2"></div>
+
+    <label>How would you rate your onboarding session?</label>
+    <div class="stars" data-question="q3"></div>
+
+    <label>Did you receive all required access/logins?</label>
+    <div class="stars" data-question="q4"></div>
+
+    <label>Suggestions or Concerns?</label>
+    <textarea id="q5" placeholder="Type here..."></textarea>
+
+    <button onclick="submitForm()">Submit</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

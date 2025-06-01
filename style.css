@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: royalblue;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* === STAR STYLING === */
+.stars {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  gap: 5px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.star {
+  transition: transform 0.2s ease, color 0.3s ease;
+  color: gray;
+}
+
+.star:hover {
+  transform: scale(1.3);
+}
+
+.star.selected {
+  color: gold;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
